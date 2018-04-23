@@ -1,0 +1,21 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts" x:Class="WpfApplication1.MainWindow"
+        Title="MainWindow" Height="350" Width="525" >
+    <Grid >
+        <dxc:ChartControl Name="chartControl1"  HorizontalAlignment="Left" VerticalAlignment="Top">
+            <dxc:ChartControl.Legend>
+                <dxc:Legend/>
+            </dxc:ChartControl.Legend>
+            <dxc:XYDiagram2D>
+                <dxc:XYDiagram2D.SeriesTemplate>
+                    <dxc:LineSeries2D DisplayName="Series 1">
+                    </dxc:LineSeries2D>
+                </dxc:XYDiagram2D.SeriesTemplate>
+            </dxc:XYDiagram2D>
+        </dxc:ChartControl>
+        <Canvas Name="Canvas" SizeChanged="Canvas_SizeChanged">
+        </Canvas>
+    </Grid>
+</Window>
